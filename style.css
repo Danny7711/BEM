@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.content__text {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.content__text::before {
+    content: "→ ";
+    color: blue;
+    font-size: 25px;
+}
+
+.content__title {
+    color: black;
+}
+
+.content__title::after {
+    content: " ★";
+    color: red;
+}
+
+.content__block {
+    width: 300px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.content__block::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.content__block::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: green;
+    margin-top: 15px;
+}
